@@ -28,21 +28,24 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        Creditos = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         botonRegistro = new javax.swing.JButton();
         textoNombre = new javax.swing.JTextField();
-        textoCedula = new javax.swing.JTextField();
-        textoCorreo = new javax.swing.JTextField();
+        textoCreditos = new javax.swing.JTextField();
+        textoGrupo = new javax.swing.JTextField();
+
+        jLabel4.setText("jLabel4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Nombre");
 
-        jLabel2.setText("Cedula");
+        Creditos.setText("Creditos");
 
-        jLabel3.setText("Correo");
+        jLabel3.setText("Grupo");
 
         botonRegistro.setText("Registrar");
         botonRegistro.addActionListener(new java.awt.event.ActionListener() {
@@ -53,9 +56,9 @@ public class NewJFrame extends javax.swing.JFrame {
 
         textoNombre.setText("jTextField1");
 
-        textoCedula.setText("jTextField1");
+        textoCreditos.setText("jTextField1");
 
-        textoCorreo.setText("jTextField1");
+        textoGrupo.setText("jTextField1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,11 +70,11 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(textoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(textoGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(Creditos)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(textoCedula, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(textoCreditos, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(37, 37, 37)
@@ -91,12 +94,12 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(textoNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(textoCedula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Creditos)
+                    .addComponent(textoCreditos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(textoCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(textoGrupo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addComponent(botonRegistro)
                 .addContainerGap(105, Short.MAX_VALUE))
@@ -108,8 +111,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void botonRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRegistroActionPerformed
         Mysql_prueba2 bd = new Mysql_prueba2();
         
-        //bd.conection(textoNombre.getText(), textoCedula.getText(),textoCorreo.getText());
-        bd.conectar();
+        bd.conectar(textoNombre.getText(), textoCreditos.getText(),textoGrupo.getText());
+        //bd.conectar();
     }//GEN-LAST:event_botonRegistroActionPerformed
 
     /**
@@ -148,12 +151,13 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Creditos;
     private javax.swing.JButton botonRegistro;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField textoCedula;
-    private javax.swing.JTextField textoCorreo;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField textoCreditos;
+    private javax.swing.JTextField textoGrupo;
     private javax.swing.JTextField textoNombre;
     // End of variables declaration//GEN-END:variables
 }

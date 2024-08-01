@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel4"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -29,12 +36,12 @@
                   <Group type="102" attributes="0">
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="textoCorreo" min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="textoGrupo" min="-2" pref="71" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <Component id="Creditos" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="textoCedula" min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="textoCreditos" min="-2" pref="71" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -61,13 +68,13 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="textoCedula" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Creditos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textoCreditos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="textoCorreo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="textoGrupo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Component id="botonRegistro" min="-2" max="-2" attributes="0"/>
@@ -82,14 +89,14 @@
         <Property name="text" type="java.lang.String" value="Nombre"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="Creditos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cedula"/>
+        <Property name="text" type="java.lang.String" value="Creditos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Correo"/>
+        <Property name="text" type="java.lang.String" value="Grupo"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="botonRegistro">
@@ -105,12 +112,12 @@
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="textoCedula">
+    <Component class="javax.swing.JTextField" name="textoCreditos">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="textoCorreo">
+    <Component class="javax.swing.JTextField" name="textoGrupo">
       <Properties>
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
